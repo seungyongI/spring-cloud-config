@@ -72,11 +72,12 @@ management:
     web:
       exposure:
         include: "*"
-# jwt 비밀번호
 
+# jwt 비밀번호
 token:
-  expiration_time: 86400000
-  secret: abcdefghijklmnopqrstuvwxyz01234567890abcdefghijklmnopqrstuvwxyz01234567890
+  access_token_expiration_time: 86400 # 하루
+  refresh_token_expiration_time: 2592000 # 한 달
+  secret: abcdefghijklmnopqrstuvwxyz01234567890
 
 gateway:
   ip: 127.0.0.1
